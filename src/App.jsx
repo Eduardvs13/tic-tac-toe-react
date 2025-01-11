@@ -33,7 +33,7 @@ function App() {
     setBoard(newBoard);
     const newWinner = checkWinner(newBoard);
     window.localStorage.setItem("board", JSON.stringify(newBoard));
-    window.localStorage.setItem("turn", turn);
+    window.localStorage.setItem("turn", newTurn);
     if (newWinner) {
       confetti();
       setWinner(newWinner);
